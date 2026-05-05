@@ -383,7 +383,7 @@ class Company {
 }
 ```
 
-## 📄 user_model.dart
+## 📄 info_tile.dart
 
 ```dart
 import 'package:flutter/material.dart';
