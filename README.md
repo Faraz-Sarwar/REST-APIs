@@ -63,6 +63,8 @@ class MyApp extends StatelessWidget {
   }
 }
 
+```
+
 ## 📄 home_screen.dart
 
 ```dart
@@ -168,7 +170,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
+```
 
 ## 📄 user_profile_screen.dart
 
@@ -248,7 +250,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
     );
   }
 }
-
+```
 
 ## 📄 user_model.dart
 
@@ -379,7 +381,7 @@ class Company {
     return data;
   }
 }
-
+```
 
 ## 📄 user_model.dart
 
@@ -432,3 +434,4 @@ class InfoTile extends StatelessWidget {
     );
   }
 }
+```
