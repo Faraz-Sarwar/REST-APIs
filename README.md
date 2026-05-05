@@ -1,16 +1,43 @@
-# rest_api
+# 📱 Flutter REST API App
 
-A new Flutter project.
+A simple Flutter app that fetches and displays user data from an online source and shows detailed user profiles.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- Fetches and displays a list of users
+- User detail screen with full profile info
+- Clean and simple UI
+- Loading indicator while data is fetched
+- Error handling for failed requests
+- Reusable UI component for displaying user info
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📱 App Flow
+
+- Home screen shows a list of users  
+- Tap on a user to view detailed profile  
+- Profile screen shows:
+  - Name
+  - Email
+  - Phone (formatted)
+  - Company
+  - Location  
+
+---
+
+## 🛠 Tech Used
+
+- Flutter  
+- Dart  
+- HTTP  
+
+---
+
+## ▶️ Run Project
+
+```bash
+flutter pub get
+flutter run
