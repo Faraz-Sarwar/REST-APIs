@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:rest_api/model/user_model.dart';
 import 'package:http/http.dart' as http;
@@ -35,7 +36,6 @@ class _PutApiState extends State<PutApi> {
         }),
       );
       if (response.statusCode == 200) {
-        print(response.body);
         setState(() {
           isLoading = false;
         });
@@ -44,9 +44,11 @@ class _PutApiState extends State<PutApi> {
           MaterialPageRoute(builder: (context) => const GetApi()),
         );
         final data = ApiModel.fromJson(jsonDecode(response.body));
-        print('Post updated with id: ${data.id}');
-        print('Post updated title: ${data.title}');
-        print('Post updated body: ${data.body}');
+        if (kDebugMode) {
+          print('Post updated with id: ${data.id}');
+          print('Post updated title: ${data.title}');
+          print('Post updated body: ${data.body}');
+        }
       } else {
         setState(() {
           isLoading = false;
